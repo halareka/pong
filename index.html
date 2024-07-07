@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="image/x-icon" href="./public/circle-svgrepo-com.svg" rel="icon">
+        <title>pong</title>
+        <link rel="stylesheet" href="./src/style/style.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <div id="shape"></div>
+
+        <div id="enemy"></div>
+
+        <div class="wrapper">
+            <h2 class="text">счет</h2>
+            <div class="left zone">
+                <h2 class="counter" id="leftCount">0</h2>
+            </div>
+            <div class="right zone">
+                <h2 class="counter" id="rightCount">0</h2>
+            </div>
+        </div>
+
+        <script>
+            const ROOT = document.getElementById("root");
+            ROOT.style.marginTop = `${Math.floor(window.innerHeight / 2 - 75)}px`;
+
+            const ENEMY = document.getElementById("enemy");
+            ENEMY.style.marginTop = `${Math.floor(window.innerHeight / 2 - 75)}px`;
+
+            const SHAPE = document.getElementById("shape");
+            SHAPE.style.marginTop = `${Math.floor(window.innerHeight / 2 - 50)}px`;
+            SHAPE.style.marginLeft = `${Math.floor(window.innerWidth / 2 - 50)}px`;
+        </script>
+        <script type="module" src="src/main.ts"></script>
+    </body>
+</html>

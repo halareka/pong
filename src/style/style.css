@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "pixelFont";
+    src: url("../../fonts/HomeVideo-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body,
+html {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    font-family: "pixelFont";
+}
+#root {
+    position: absolute;
+    left: 50px;
+
+    width: 50px;
+    height: 100px;
+
+    background-color: rgb(177, 219, 255);
+    transition: 0.05s;
+}
+#shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    transition: 0.05s;
+}
+#enemy{
+    position: absolute;
+    right: 50px;
+
+    width: 50px;
+    height: 100px;
+
+    background-color: rgb(177, 219, 255);
+    transition: 0.15s;
+}
+.wrapper {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+}
+.zone {
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+    padding:15px;
+}
+.left {
+    border-right: 1px solid white;
+}
+.counter {
+    color: aliceblue;
+    transition: 0.2s;
+    margin: 0;
+    font-size: 25px;
+}
+.text {
+    position: absolute;
+    left: calc(50% - 30px);
+    color: rgb(255, 255, 255);
+}
