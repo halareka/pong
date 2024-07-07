@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="image/x-icon" href="/pong/assets/circle-svgrepo-com-DpiDMuwj.svg" rel="icon">
+        <title>pong</title>
+      <script type="module" crossorigin src="/pong/assets/index-BFF8KUDg.js"></script>
+      <link rel="stylesheet" crossorigin href="/pong/assets/index-DXdN2GxH.css">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <div id="shape"></div>
+
+        <div id="enemy"></div>
+
+        <div class="wrapper">
+            <h2 class="text">счет</h2>
+            <div class="left zone">
+                <h2 class="counter" id="leftCount">0</h2>
+            </div>
+            <div class="right zone">
+                <h2 class="counter" id="rightCount">0</h2>
+            </div>
+        </div>
+
+        <script>
+            const ROOT = document.getElementById("root");
+            ROOT.style.marginTop = `${Math.floor(window.innerHeight / 2 - 75)}px`;
+
+            const ENEMY = document.getElementById("enemy");
+            ENEMY.style.marginTop = `${Math.floor(window.innerHeight / 2 - 75)}px`;
+
+            const SHAPE = document.getElementById("shape");
+            SHAPE.style.marginTop = `${Math.floor(window.innerHeight / 2 - 50)}px`;
+            SHAPE.style.marginLeft = `${Math.floor(window.innerWidth / 2 - 50)}px`;
+        </script>
+    </body>
+</html>
